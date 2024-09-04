@@ -17,10 +17,16 @@
           </fieldset>
           <fieldset>
             <legend>Account type (required)</legend>
-            <label><input type="radio" name="account-type" checked/> Personal</label>
-            <label><input type="radio" name="account-type"/> Business</label>
+            <label for="personal-account"><input id="personal-account" type="radio" name="account-type" checked/> Personal</label>
+            <label for="business-account"><input id="business-account" type="radio" name="account-type"/> Business</label>
           </fieldset>
-          <fieldset></fieldset>
+          <fieldset>
+            <label type="file">Upload a profile picture:<input type=file></label> <!--to upload a profile picture-->
+          </fieldset>
+          <label for="terms-and-conditions">
+            <input id="terms-and-conditions" type="checkbox" required /> <!--acceptation form-->
+            I accept the <a href="https://www.freecodecamp.org/news/terms-of-service/">terms and conditions</a>
+          </label>
           <input type="Submit" value="Submit">
     </form>
   </body>
